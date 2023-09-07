@@ -1,0 +1,89 @@
+.navbar {
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ededed;
+    box-shadow: 0 5px 20px rgba(0 0 0 / 25%), 0 0px 10px rgba(0 0 0 / 30%) ;
+    padding: 10px 20px;
+    overflow-x: hidden;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+}
+
+.logo:hover h1 {
+    color: #393939;
+}
+.logo h1 {
+    font-size: 20px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+.logo ion-icon {
+    font-size: 30px;
+}
+.navigation ul {
+    display: flex;
+    align-items: center;
+}
+.navigation ul li {
+    list-style: none;
+}
+.navigation ul li a {
+    position: relative;
+    text-decoration: none;
+    padding: 4px 12px;
+    display: flex;
+    color: black;
+}
+
+.navigation ul li a span {
+    /* margin-right: 4px; */
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+    display: flex;
+    padding: 5px 0;
+}
+.navigation ul li a span ion-icon {
+    margin-left: 2px;
+}
+
+.navigation ul li a span::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 500ms ease;
+}
+.navigation ul li a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.navigation ul li a:hover span::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.fbtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.button {
+    background: transparent;
+    border : none;
+    font-size: 20px;
+    cursor: pointer;
+}

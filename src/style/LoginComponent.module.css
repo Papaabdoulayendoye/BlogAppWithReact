@@ -1,0 +1,185 @@
+.LoginComponent {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    /* background: url(); */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow: hidden !important;
+}
+.Container {
+    position: absolute;
+    min-height: calc(100% - 60px);
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Container .Header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    bottom: 50px ;
+}
+.Header h1 {
+    color : rgba(0, 0, 0, 0.7);
+}
+
+.Container .Content {
+    position: relative;
+    height: 300px;
+    bottom: 30px;
+    width: 390px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 8px; */
+}
+.Content .formBx {
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.formBx .inputBx {
+    position: relative;
+    margin-bottom: 20px;
+    border :none ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 40px;
+}
+.inputBx span {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #898989;
+    /* margin-bottom: 5px; */
+    padding: 4px 12px;
+}
+.inputBx input {
+    padding: 12px 24px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    border : none;
+    background-color: #f3f3f3;
+}
+.inputBx input:focus {
+    /* outline: 1px solid #0a66c2; */
+    border: 1px solid #0a66c2;
+    box-shadow: inset 0 5px 10px rgb(0 0 0 / 20%);
+}
+.formBx .SubmitBtn {
+    position: relative;
+    width:80%;
+    padding: 12px 24px;
+    border-radius: 50px;
+    /* margin-bottom: 15px; */
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: background 250ms ease;
+    cursor: pointer;
+}
+.HR {
+    margin-bottom: 15px ;
+    width: 400px;
+}
+.BTN {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.BTN button:last-child {
+    /* padding-top: 8px; */
+    padding: 12px;
+    & > svg {
+        padding-right: 10px;
+        height: 31px;
+        width: 31px;
+    }
+}
+
+.SigninWithGoogle {
+    /* padding: 8px 24px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 325px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #333;
+    cursor: pointer;
+    transition: background 250ms ease;
+}
+.SigninWithGoogle img {
+    padding-right: 10px;
+    top: 5px;
+    /* height: 35px; */
+    /* width: 35px */
+}
+.formBx .SubmitBtn:hover {
+    /* background-color: #1877f2; */
+    background-color: rgba(0, 0, 0, 0.155);
+    /* color: #fff; */
+}
+.SigninWithGoogle:hover {
+    background-color: rgba(0, 0, 0, 0.155);
+}
+.formBx .signUp {
+    /* text-align: left; */
+    position: relative;
+    top: 10px;
+    left: -40px;
+    color: rgba(0, 0, 0, 50%);
+    & > a  {
+        color: rgba(0, 0, 0, 50%);
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+            color: #191919;
+        }
+    }
+}
+.SIGNUPMODAL {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    & > a {
+        margin-left: 4px;
+        padding-left: 4px;
+        border-left: 1px solid rgba(0, 0, 0, 50%);
+        color: rgba(0, 0, 0, 0.822);
+        text-decoration: none;
+        /* text-transform: uppercase; */
+        &:hover {
+            color: #191919;
+        }
+    }
+}
+
+.signUpDIV{
+    position: relative;
+    bottom: 10px;
+    left: 40px;
+}
+.errors {
+    position: relative;
+    top: 4px;
+    color: red;
+    padding: 0 8px;
+    /* margin-top: 4px; */
+}

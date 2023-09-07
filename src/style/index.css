@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x:auto ; */
+    font-family: "Poppins", sans-serif;
+}
+body { 
+    background-color:#f3f3f3 ;
+}
+
+.TOAST {
+    position: relative;
+    top: 50px ;
+}
+.spin {
+    position: relative;
+    top: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    row-gap: 15px;
+    & > p {
+        color: #adadad;
+    }
+}
+.load {
+    margin-left: 15px;
+    & > span {
+        & > i {
+            background: #a0a0a0 !important;
+        }
+    }
+}
