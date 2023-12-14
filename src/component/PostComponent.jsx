@@ -6,7 +6,9 @@ import { collection, getDocs, addDoc, query, where, deleteDoc, doc } from 'fireb
 function PostComponent({ post, user }) {
     
     const likesRef = collection(db, "likes")
+    
     const likesDoc = query(likesRef, where("postId", "==", post.id ) )
+    
     const [likes, setLikes] = useState(null) 
     
     const likePost = async () => {

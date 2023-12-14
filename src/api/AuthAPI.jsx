@@ -4,6 +4,7 @@ import {
     signInWithEmailAndPassword, 
     signInWithPopup,
 } from "firebase/auth";
+
 import { signOut } from "firebase/auth";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
@@ -63,7 +64,6 @@ const SignInWithGoogleAPI = async() => {
 
 const SignOutAPI =  async () => {
     try {
-
         await signOut(auth)
         toast.success("Sign out Successfully", {
             position : toast.POSITION.TOP_RIGHT,
